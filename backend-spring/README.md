@@ -3,15 +3,20 @@
 
 > Seu objetivo é construir uma API que controle dados de uma universidade, mais especificamente sobre alunos, professores, disciplinas e turmas. 
 
-O teste possui 3 diferentes níveis de complexidade e você tem a liberdade de escolher até qual nível sua aplicação irá atender. Dentro de cada nível, estarão listados requisitos obrigatórios e opcionais. Logo, você deve cumprir todos os requisitos obrigatórios do nível escolhido e de seus níveis antecessores.
+O teste possui 3 diferentes níveis de complexidade e você tem a liberdade de escolher até qual nível sua aplicação irá atender. Dentro de cada nível, estarão listados requisitos obrigatórios (🔴) e opcionais (⚪). Logo, você deve cumprir todos os requisitos obrigatórios do nível escolhido e de seus níveis antecessores.
  
 Sinta-se a vontade para adicionar funcionalidades extras que não estejam descritas aqui ou também adicionar requisitos de níveis acima do que você escolheu.
 
 ## Sobre o teste
 
-Como já enunciado, sua aplicação deverá ser construída usando Spring Boot, com versão 8 ou superior do Java. Para a persistência, você deverá ser um banco de dados relacional, podendo escolher entre MySQL, PostgreSQL ou OracleDB. Como ferramenta ORM, você deverá usar o framework Hibernate aliado ao projeto Spring Data. Sua aplicação deverá ser separada em camadas de acesso, serviço e dados, além de classes representando utilitários, entidades, DTOs, etc. [Nessa pasta](info/) você encontrará mais detalhes sobre o padrão dos dados, como os schemas dos JSONs, diagrama ER do banco e afins. 
+Como já enunciado, sua aplicação deverá ser construída usando Spring Boot, com versão 8 ou superior do Java. Para a persistência, você deverá ser um banco de dados relacional, podendo escolher entre MySQL, PostgreSQL ou OracleDB e como ferramenta ORM, você deverá usar o framework Hibernate aliado ao projeto Spring Data. Sua aplicação deverá ser separada em camadas de acesso, serviço e dados, além de classes representando utilitários, entidades, DTOs, etc. [Nessa pasta](info/) você encontrará mais detalhes sobre o padrão dos dados, como os schemas dos JSONs, diagrama ER do banco e afins. 
 
 ## Níveis da aplicação
 
- 1. CRUD básico para alunos e professores
+ 1. A aplicação deverá ter todas funcionalidades de um CRUD para recursos de [alunos](info/communication/student.json) e [professores](info/communication/teacher.json), além de: 
+   - 🔴 Alunos e professores deverão ter um atributo de imagem. Note que isso não está mapeados nos [schemas](info/communication/) e cabe a você definir a implementação disso
+   - 🔴 Paginação das listagens
+   - 🔴 Uso de API de Streams do Java
+   - ⚪ Libs externas (Apache Commons, Guava, GSON)
+   - ⚪ Exceptions customizadas
    
