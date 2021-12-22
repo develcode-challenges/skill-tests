@@ -1,8 +1,7 @@
 # Testes de conhecimento em tecnologia
+<img src=".assets/logo.jpeg" align="right" alt="Develcode Logo" width="100" height="100">
 
 > Repositório com informações para candidatos que queiram realizar os testes de conhecimentos em tecnologia
-
-<img src=".assets/logo.jpeg" align="right" alt="Develcode Logo" width="100" height="100">
 
 ## Sobre a Develcode
 
