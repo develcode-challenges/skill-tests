@@ -9,7 +9,7 @@ Sinta-se a vontade para adicionar funcionalidades extras que não estejam descri
 
 ## Sobre o teste
 
-Como já enunciado, sua aplicação deverá ser construída usando Spring Boot, com versão 8 ou superior do Java. Para a persistência, você deverá ser um banco de dados relacional, podendo escolher entre MySQL, PostgreSQL ou OracleDB. Como ferramenta ORM, você deverá usar o framework Hibernate aliado ao projeto Spring Data. Sua aplicação deverá ser separada em camadas de acesso, serviço e dados, além de classes representando utilitários, entidades, DTOs, etc. [Nessa pasta](info/) você encontrará mais detalhes sobre o padrão dos dados, como o formato dos JSONs, diagrama ER do banco e afins. 
+Como já enunciado, sua aplicação deverá ser construída usando Spring Boot, com versão 8 ou superior do Java. Para a persistência, você deverá ser um banco de dados relacional, podendo escolher entre MySQL, PostgreSQL ou OracleDB. Como ferramenta ORM, você deverá usar o framework Hibernate aliado ao projeto Spring Data. Sua aplicação deverá ser separada em camadas de acesso, serviço e dados, além de classes representando utilitários, entidades, DTOs, etc. [Nessa pasta](info/) você encontrará mais detalhes sobre o padrão dos dados, como os schemas dos JSONs, diagrama ER do banco e afins. 
 
 ## Níveis da aplicação
 

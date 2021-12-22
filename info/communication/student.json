@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "name": "Jon Doe",
+      "birthDate": "2001-12-31",
+      "cpf": "000.000.000-00",
+      "rg": "0000000000",
+      "studentId": "55919035"
+    }
+  ],
+  "required": [
+    "name",
+    "birthDate",
+    "cpf",
+    "rg"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "examples": [
+        "Jon Doe"
+      ],
+      "type": "string"
+    },
+    "birthDate": {
+      "$id": "#/properties/birthDate",
+      "examples": [
+        "2001-12-31"
+      ],
+      "pattern": "YYYY-MM-DD",
+      "type": "string"
+    },
+    "cpf": {
+      "$id": "#/properties/cpf",
+      "description": "Esse atributo aceita valores formatados com ponto e traço, conforme padrão nacional de CPF e também valores sem formatação, apenas números",
+      "examples": [
+        "000.000.000-00"
+      ],
+      "type": "string"
+    },
+    "rg": {
+      "$id": "#/properties/rg",
+      "type": "string",
+      "title": "The rg schema",
+      "examples": [
+        "0000000000"
+      ]
+    },
+    "studentId": {
+      "$id": "#/properties/studentId",
+      "description": "Atenção, esse valor é o identificador de um aluno dentro da faculdade e deve ser gerado de forma automática no momento do cadastro",
+      "examples": [
+        "55919035"
+      ],
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

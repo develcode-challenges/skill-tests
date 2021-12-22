@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "name": "Jon Doe",
+      "birthDate": "2001-12-31",
+      "cpf": "000.000.000-00",
+      "rg": "0000000000",
+      "educationLevel": "LICENCIATURA"
+    }
+  ],
+  "required": [
+    "name",
+    "birthDate",
+    "cpf",
+    "rg",
+    "educationLevel"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "examples": [
+        "Jon Doe"
+      ],
+      "type": "string"
+    },
+    "birthDate": {
+      "$id": "#/properties/birthDate",
+      "examples": [
+        "2001-12-31"
+      ],
+      "pattern": "YYYY-MM-DD",
+      "type": "string"
+    },
+    "cpf": {
+      "$id": "#/properties/cpf",
+      "description": "Esse atributo aceita valores formatados com ponto e traço, conforme padrão nacional de CPF e também valores sem formatação, apenas números",
+      "examples": [
+        "000.000.000-00"
+      ],
+      "type": "string"
+    },
+    "rg": {
+      "$id": "#/properties/rg",
+      "type": "string",
+      "examples": [
+        "0000000000"
+      ]
+    },
+    "educationLevel": {
+      "$id": "#/properties/educationLevel",
+      "description": "Atenção, esse valor deverá ser controlado por um ENUM",
+      "examples": [
+        "LICENCIATURA"
+      ],
+      "enum": [
+        "LICENCIATURA",
+        "MESTRADO",
+        "DOUTORADO"
+      ],
+      "type": "string"
+    },
+    "additionalProperties": true
+  }
+}
